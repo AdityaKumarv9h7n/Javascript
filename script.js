@@ -1,3 +1,8 @@
+
+
+
+
+
 const now = 2024;
 
 const firstName = "Aditya"
@@ -177,3 +182,77 @@ string");
 console.log("this is the \n\string");
 
 // if you will hit the tab then that space of the tab will also be taken by the browser to show that message in the console of the browser
+
+const ageOfSarah = 19;
+const minimumAge = 18;
+
+if(ageOfSarah >= minimumAge) {
+  console.log("Sarah is eligible to vote and to get the driving licence")
+}
+
+// or we can write it as 
+let name = "Rohit" ;
+let ageOfThePerson = 14;
+let minimumAgeForDriving = ageOfThePerson >= 18;
+
+if(minimumAgeForDriving){
+  console.log(`You are ready to rock ${name}`)
+};
+
+
+// in the above code ${name} the ${} is the place holder and name is the string inside that placeholder and it will be replaced by the actual value of the name variable in the console of the browser
+
+// in the () of if condition which means that if the condition is true then the code inside the if condition will be executed in this condition it will log to theconsole to the 
+
+// and for not true it will not log anything to the console
+
+// in the condition of the if() will not true we use else condition here else is explained
+
+if(minimumAgeForDriving){
+  console.log(`You are ready to Rock ${name}`)
+}
+else{
+  const yearsLeft = 18- ageOfThePerson
+  console.log(`${name} you need to wait for ${yearsLeft} more years to apply for the Driving Licence`)
+}
+
+/*  if(){
+    } else {
+    }
+
+
+    the above structure of if and else is known as controled structure in JS
+
+    and  any variable which you will assume inside the  curly bracket  after the else will not be used outside the curly brackets
+
+    if(){
+    } else {
+    }
+
+    in this code these two brackets { }
+     are the code block
+    */
+
+// for example the below code will show an error that script.js:231 Uncaught ReferenceError: yearsLeft is not defined at script.js:231:13 you can try it just by simply uncomment it
+
+
+// console.log(yearsLeft);
+
+
+const birthYear = 1344;
+const century = "21st Century";
+if(birthYear >= 2000){
+  console.log(century)
+}
+
+
+  if(2000>(birthYear >= 1900) ) {
+    console.log(`20th Century`)
+  }
+  else{ 
+    if(birthYear < 1900)
+    console.log("")
+  }
+
+
+
