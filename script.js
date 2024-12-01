@@ -98,11 +98,11 @@ console.log(z,y);
 // in this condition first 20 - 13 will be done and then the result of 20 - 13 will be assigned to both the variables z and y 
 
 
-let massOfMarks = 78
-let heightOfMarks = 169
+let massOfMarks = 95
+let heightOfMarks = 188
 
-let massOfJohn = 92
-let heightOfJohn = 195
+let massOfJohn = 85
+let heightOfJohn = 176
 
 // BMI is the ratio of the mass of a person to the square of their height
 
@@ -120,7 +120,12 @@ const markHigherBmi = console.log(massOfMarks/((heightOfMarks/100)*(heightOfMark
 
 const johnHigherBmi = console.log(massOfJohn / ((heightOfJohn/100)*(heightOfJohn/100)));
 
+
+
 console.log (markHigherBmi < johnHigherBmi);
+
+
+
 // in this condition first the BMI of both the person will be calculated and then the result will be
 
 
@@ -239,20 +244,39 @@ else{
 // console.log(yearsLeft);
 
 
-const birthYear = 1344;
+const birthYear =2345;
 const century = "21st Century";
-if(birthYear >= 2000){
+if(2100 >birthYear >= 2000){
   console.log(century)
 }
 
-
-  if(2000>(birthYear >= 1900) ) {
+if((2000>birthYear >= 1900) ) {
     console.log(`20th Century`)
   }
-  else{ 
+else{ 
     if(birthYear < 1900)
-    console.log("")
+    console.log("You are devil")
   }
 
+if(birthYear > 2024){
+  console.log(`you do not exist`);
+}
 
 
+if(markHigherBmi<johnHigherBmi){
+  console.log("Mark's BMI is higher than John's");
+}else{
+  console.log("John's BMI is higher than Mark's");
+}
+
+
+
+let no1= 3;
+let no2= 5;
+
+if(no1>no2)
+  {console.log(`${no1} is greator than ${no2}`)}
+else{
+  console.log(`${no1} is smaller than ${no2}`)
+}
+  
