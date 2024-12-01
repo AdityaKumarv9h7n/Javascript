@@ -106,6 +106,8 @@ let heightOfJohn = 176
 
 // BMI is the ratio of the mass of a person to the square of their height
 
+
+
 console.log(massOfMarks/(heightOfMarks/ 100) **2);
 
 console.log(massOfJohn /(heightOfJohn/ 100) **2);
@@ -116,13 +118,19 @@ console.log(massOfMarks/((heightOfMarks/100)*(heightOfMarks/100)));
 console.log(massOfJohn / ((heightOfJohn/100)*(heightOfJohn/100)));
 
 
-const markHigherBmi = console.log(massOfMarks/((heightOfMarks/100)*(heightOfMarks/100)))
+const markHigherBmi = (massOfMarks/((heightOfMarks/100)*(heightOfMarks/100)));
 
-const johnHigherBmi = console.log(massOfJohn / ((heightOfJohn/100)*(heightOfJohn/100)));
+const johnHigherBmi = (massOfJohn / ((heightOfJohn/100)*(heightOfJohn/100)));
 
 
 
-console.log (markHigherBmi < johnHigherBmi);
+console.log (markHigherBmi);
+
+// Extra Points to remember
+//  What console.log Does:
+
+// console.log() is a function that outputs a value to the console. It does not return the value it logs; it simply prints it to the console.
+// In JavaScript, console.log() returns undefined
 
 
 
@@ -270,6 +278,14 @@ if(markHigherBmi<johnHigherBmi){
 }
 
 
+if(markHigherBmi>johnHigherBmi){
+  console.log(`Marks BMI is (${markHigherBmi}) higher than the Jhon's BMI(${johnHigherBmi})`)
+}else{
+  console.log(`Jhon's BMI is (${johnHigherBmi}) higher than the Marks BMI (${markHigherBmi})`)
+};
+
+
+
 
 let no1= 3;
 let no2= 5;
@@ -280,3 +296,68 @@ else{
   console.log(`${no1} is smaller than ${no2}`)
 }
   
+
+
+// Type Conversion and coercion
+
+// Type Conversion is when we manually convert from one type to another and Coercion is when JS itself converts the type for us.
+
+// Type Coercion happens completely hidden from us, we don't need to do anything, it just happens.
+
+
+// converting the string into the number using the Number() function
+
+const inputYear = "1920";
+console.log(inputYear);// this will give us a string
+
+console.log(Number(inputYear));// this will convert the string 1920 into the number type 
+// this will give us 1920 which will be a number type
+
+
+console.log(Number(inputYear)+ 18);// this will add 18 to the number type 1920 and give us  1938 because inputYear is a number type now
+
+console.log(Number("Rohit"));// this will log to the console NaN which stands for Not a Number because Rohit is not a number type it is a string type 
+
+console.log(typeof NaN);// this will log number to the console because NaN is a number type in JS 
+
+console.log(String(NaN));// this will log NaN to the console because NaN is a number type and we are converting it into a string type using the String() function
+
+
+// NaN is still a number but it is an invalid number that's why when we change the type of NaN to string it will still be NaN and not undefined or null or any other type
+
+// we get NaN when we try to convert a string into a number if the string is not a valid number type
+
+// when operation Numner() fails to give us a new number type it will return NaN which stands for Not a Number
+
+// now we are going to converting the number into the string by using the String() function
+
+console.log(String(19), 19);// this will log the first number to the console as a string and the another number as a number only because we are using the comma operator which will return the second number only as a number not will change the another number to the string type
+
+// to convert any type into the another type we need to start the type name with a capital letter like String() Number() Boolean() etc.
+
+// In JavaScript we can only convert Number into the string and to the boolean but can't convert into  undefined or into null type because undefined and null are not types in JavaScript they are values in JavaScript.
+
+
+//now we are going to learn type coercion in JavaScript
+
+
+console.log("I am " + 25 + " years old ");// this will log to the console I am 25 years old because the + operator is used here which will convert the number 25 into the string type and then concatenate
+
+console.log(" I am " - 25 + " years old ");// this will log to the console "NaN years old" because as we from the Operators precedence that substraction works from the left-to-right so in this case first JS will convert the "I am" string into the number which will be NaN and then from the NaN 25 will be substracted which will also give us NaN as the result and at last the javascript will concatenate the NaN with the string " years old " which will give us "NaN years old" as the result
+
+
+console.log(" I am " - 25 + " years old ");// in this example first the javascript will try to do the substraction operation which will fail because we can't subtract a number from a string so it will give us NaN as the result and then the javascript will concatenate the NaN with the string " years old " which will give us "NaN years old" as the result
+
+
+console.log("I am " + 25 + " years old ");// in this example first the javascript will look around the 25 if he finds that after the + sign in anyside of the 25 there is a string then it will convert the 25 into the string type and then concatenate the strings which will give us
+
+
+console.log("I am " + 25 - " years old");// the result will be NaN
+
+console.log("I am " + (25 - " years old"));// the result will be I am NaN
+
+console.log("I am " - 25 - " years old");// the result will be NaN
+
+console.log(("I am " - 25) - " years old");// the result will be NaN
+
+console.log("I am " + 25 + " years old");// the result will be I am 25 years old because it will convert the 25 into the string because here in the both side of 25 there is a string so it will convert the 25 into the string and then concatenate the strings together
