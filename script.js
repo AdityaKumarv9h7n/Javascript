@@ -296,8 +296,6 @@ else{
   console.log(`${no1} is smaller than ${no2}`)
 }
   
-
-
 // Type Conversion and coercion
 
 // Type Conversion is when we manually convert from one type to another and Coercion is when JS itself converts the type for us.
@@ -358,6 +356,34 @@ console.log("I am " + (25 - " years old"));// the result will be I am NaN
 
 console.log("I am " - 25 - " years old");// the result will be NaN
 
-console.log(("I am " - 25) - " years old");// the result will be NaN
+console.log(("I am " - 25) - " years old");// the result will be NaN // - operator usually tries to convert the string into the number when it is used with the number 
 
-console.log("I am " + 25 + " years old");// the result will be I am 25 years old because it will convert the 25 into the string because here in the both side of 25 there is a string so it will convert the 25 into the string and then concatenate the strings together
+console.log("I am " + 25 + " years old");// the result will be I am 25 years old because it will convert the 25 into the string because here in the both side of 25 there is a string so it will convert the 25 into the string and then concatenate the strings together 
+                       
+console.log("23" + "10" + 3); // the output of this code in the console will be 23103 because the number will be converted into the string because in the left side of the number 3 there is a + operator and after the + operator in the left side there is a string so it will convert the number 3 into the string and then concatenate the strings
+
+
+console.log( 3 + "10" + "23");
+
+
+console.log("23" - "10" - 3);// the result will be 10 because here - operator will try to convert the string into the number and then it will do the substraction operation which will give us 10 as the result
+
+console.log("23"*"2");// in this case the javascript will convert the strings into the numbers and then it will do the multiplication operation which will give us 46 as the result
+
+console.log("40"/"20");// in this case the javascript will convert the strings into the numbers and then it will do the division which will give us the result 2
+
+// coerecion in the comparision operation
+
+console.log("23" < "14");// this will also first convert the string into the number and then it will be compared and the result will be false because 23 is greater than 14
+
+let n = "1" + 1;// here the value will be 11 as a string
+    n = n - 1;// here the value will be 10 as a number 
+    console.log(n);
+
+// the result of the above will be 10 because first of all the value of the n will be 11 as a string and in the another line of the code it will be converted into the number and then 1 will be substracted and this will give us 10 as the result
+
+console.log(2+3+4+"5");// the output will be 95 as a string 
+
+console.log("10"-"4"-"3"-2+"5");// the output will be 15 as a string
+
+
