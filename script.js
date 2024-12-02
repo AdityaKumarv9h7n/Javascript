@@ -349,3 +349,55 @@ console.log(n);
 console.log(2 + 3 + 4 + "5"); // the output will be 95 as a string
 
 console.log("10" - "4" - "3" - 2 + "5"); // the output will be 15 as a string
+// Truthy and Falsy Values
+
+//Falsy values are values that are not exactly false but would be false  when we try to convert them into a boolean
+
+// In js there are only 5 falsy values which are 0,"", null,undefined,NaN
+
+// value that will be converted to true is called truthy value when we try to convert anything other than falsy values into the boolean will give true 
+
+console.log(Boolean(3));// the output will be true because number 3 is not a falsy value
+
+console.log(Boolean(0));// this will log to the console false because 0 is a falsy value
+
+console.log(Boolean(null));//this will log to the console false because null is a falsy value
+console.log(Boolean(undefined));//------------------------------
+console.log(Boolean(""));//-------------------------------------
+console.log(Boolean(NaN));//------------------------------------
+
+// In JS {} this curly brackets are known as objects and the Boolean Value of Objest is True because this is not in the list of the 5 falsy values
+
+console.log(Boolean({}));// the output will be true because the boolean value of an object in JS is true because will be discuss further 
+
+// conversion into the booleans actually happens explicitally that is called type coersion
+
+const money = "0";
+if(money){
+  console.log(`Don't waste the whole money you have at once`);
+}else {
+  console.log(` I think that You should have some`);
+}
+
+// In the above example in the if section the money is converted into the boolean and the boolean value of the 0 is false so in this condition the else worked and due to which we get " I think that You should have some" as the output
+
+// in any other condition when we put the value of money rather than falsy value (that can be a string or anyother number) we will get "Don't waste the whole money you have at once" as the output
+
+// for example if we put 5 as the value of the money in the constant that will show us the result "Don't waste the whole money you have at once"
+
+// and if we put any string as the value of the constant like Jhon that will log the same message as it gave above in the condition of 5
+
+let height;
+if(height){
+  console.log( `Height is defined`)
+}else {
+  console.log(`Height is Undefined`)
+}
+
+// in the above condition we get the output "Height is Undefined" because the variable height is not defined and the boolean value of the undefined is falsy as the result the else condition worked and we get the output "Height is Undefined"
+
+
+// in the above case when we put the value of height as 0 we will still get the result "Height is Undefined" because the boolean value of the 0 is falsy and the else condition worked
+// so through this approach we can have some trouble in order to exactly know about the height is defined or not
+
+
