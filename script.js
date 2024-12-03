@@ -400,4 +400,77 @@ if(height){
 // in the above case when we put the value of height as 0 we will still get the result "Height is Undefined" because the boolean value of the 0 is falsy and the else condition worked
 // so through this approach we can have some trouble in order to exactly know about the height is defined or not
 
+// Equality Operators
+const age = 18;
+if(age===18) console.log("Now you are an Adult");
+else{
+  console.log("You are not an Adult");
+}
 
+// In the above example we get the if condition as the output because the value of the age is exactly equal to 18 and here we have used the strict equallity operator which will only log the answer to the console if that condition will strictly true and in the condition of not exactly true condition the else block will be loged to the console
+
+// in the above example we used the console.log statement in the if condition without using any curly brackets because we have a single line of term to log to the console.
+
+// Strict Equality operator only does the type conversion 
+
+
+// and there is a another type of equality operator which is loose equality operator which actually do the type coersion
+
+let weight = "18";
+if(weight == 18) {
+  console.log(`You are of 18 kg`);
+}else{
+  console.log(`You are under 18`);
+}
+
+// in the above example we get the if condition in the console because the type of the equality operator we are using is loose equality operator and due to which it converts the string into the number to make that possible because we know that loose equality operator converts the string into the number or the number into the string 
+
+weight = 18;
+if(weight == 18) {
+  console.log(`You are of 18 kg`);
+}else{
+  console.log(`You are under 18`);
+}
+// in this condition the result will be the same due to the same cuse but here the weight is 18 which is already in the number 
+
+// to get the data from the webpage we can use the prompt function
+
+prompt("what is the name of the day can you help me to remind I was sick so i forgot the day when I went to the hospital if you know who i am then please try to understand it. it is urgent ?  ")// in this case we will get a popup on our site like yoursite name and then says like message you have to fill in that box and then have to click ok which can be collected about which you will learn later
+
+
+//
+
+// the data which we will get though the above method will be in the string and if we want to convert that message into the number or into the any othe data type we have to wrap that prompt function like this
+const perfectAge = Number (prompt ( `What is you current Age ?`));
+console.log(perfectAge);
+
+// the logged value of the above code in the console will be the value that the user will put in the popup box which will be basically a number because we wraped the prompt function with the Number which will convert the sting Number value into the Number Value
+
+
+
+const userData = prompt("what is your name");
+console.log(userData);
+
+// in the above case we used a const userData to store the data of the prompt of the user and then we used the console.log function to print the data of the user in the console 
+
+
+// always try to use strict equallity operator to compare any two number 
+// there is also a different operator which also comes with strict different operator which is !== and also the loose different operator which is != and the loose different operator will do the type coersion and the strict different operator will not do the type coersion
+
+weight = 18;
+if(weight !== 18) {
+  console.log(`You are of 18 kg`);
+}else{
+  console.log(`You are under 18`);
+}// we will get the else version of the code because the
+
+
+// but try to use the strict loose operator whenever you will try to use 
+
+
+// "Not", "And", and "Or" operator
+
+// 
+// let firstNo = 6;
+// if((firstNo/2))
+// console.log(firstNo*((firstNo+1)/2));
