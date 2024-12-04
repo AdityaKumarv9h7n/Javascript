@@ -355,27 +355,27 @@ console.log("10" - "4" - "3" - 2 + "5"); // the output will be 15 as a string
 
 // In js there are only 5 falsy values which are 0,"", null,undefined,NaN
 
-// value that will be converted to true is called truthy value when we try to convert anything other than falsy values into the boolean will give true 
+// value that will be converted to true is called truthy value when we try to convert anything other than falsy values into the boolean will give true
 
-console.log(Boolean(3));// the output will be true because number 3 is not a falsy value
+console.log(Boolean(3)); // the output will be true because number 3 is not a falsy value
 
-console.log(Boolean(0));// this will log to the console false because 0 is a falsy value
+console.log(Boolean(0)); // this will log to the console false because 0 is a falsy value
 
-console.log(Boolean(null));//this will log to the console false because null is a falsy value
-console.log(Boolean(undefined));//------------------------------
-console.log(Boolean(""));//-------------------------------------
-console.log(Boolean(NaN));//------------------------------------
+console.log(Boolean(null)); //this will log to the console false because null is a falsy value
+console.log(Boolean(undefined)); //------------------------------
+console.log(Boolean("")); //-------------------------------------
+console.log(Boolean(NaN)); //------------------------------------
 
 // In JS {} this curly brackets are known as objects and the Boolean Value of Objest is True because this is not in the list of the 5 falsy values
 
-console.log(Boolean({}));// the output will be true because the boolean value of an object in JS is true because will be discuss further 
+console.log(Boolean({})); // the output will be true because the boolean value of an object in JS is true because will be discuss further
 
 // conversion into the booleans actually happens explicitally that is called type coersion
 
 const money = "0";
-if(money){
+if (money) {
   console.log(`Don't waste the whole money you have at once`);
-}else {
+} else {
   console.log(` I think that You should have some`);
 }
 
@@ -388,22 +388,21 @@ if(money){
 // and if we put any string as the value of the constant like Jhon that will log the same message as it gave above in the condition of 5
 
 let height;
-if(height){
-  console.log( `Height is defined`)
-}else {
-  console.log(`Height is Undefined`)
+if (height) {
+  console.log(`Height is defined`);
+} else {
+  console.log(`Height is Undefined`);
 }
 
 // in the above condition we get the output "Height is Undefined" because the variable height is not defined and the boolean value of the undefined is falsy as the result the else condition worked and we get the output "Height is Undefined"
-
 
 // in the above case when we put the value of height as 0 we will still get the result "Height is Undefined" because the boolean value of the 0 is falsy and the else condition worked
 // so through this approach we can have some trouble in order to exactly know about the height is defined or not
 
 // Equality Operators
 const age = 18;
-if(age===18) console.log("Now you are an Adult");
-else{
+if (age === 18) console.log("Now you are an Adult");
+else {
   console.log("You are not an Adult");
 }
 
@@ -411,66 +410,85 @@ else{
 
 // in the above example we used the console.log statement in the if condition without using any curly brackets because we have a single line of term to log to the console.
 
-// Strict Equality operator only does the type conversion 
-
+// Strict Equality operator only does the type conversion
 
 // and there is a another type of equality operator which is loose equality operator which actually do the type coersion
 
 let weight = "18";
-if(weight == 18) {
+if (weight == 18) {
   console.log(`You are of 18 kg`);
-}else{
+} else {
   console.log(`You are under 18`);
 }
 
-// in the above example we get the if condition in the console because the type of the equality operator we are using is loose equality operator and due to which it converts the string into the number to make that possible because we know that loose equality operator converts the string into the number or the number into the string 
+// in the above example we get the if condition in the console because the type of the equality operator we are using is loose equality operator and due to which it converts the string into the number to make that possible because we know that loose equality operator converts the string into the number or the number into the string
 
 weight = 18;
-if(weight == 18) {
+if (weight == 18) {
   console.log(`You are of 18 kg`);
-}else{
+} else {
   console.log(`You are under 18`);
 }
-// in this condition the result will be the same due to the same cuse but here the weight is 18 which is already in the number 
+// in this condition the result will be the same due to the same cuse but here the weight is 18 which is already in the number
 
 // to get the data from the webpage we can use the prompt function
 
-prompt("what is the name of the day can you help me to remind I was sick so i forgot the day when I went to the hospital if you know who i am then please try to understand it. it is urgent ?  ")// in this case we will get a popup on our site like yoursite name and then says like message you have to fill in that box and then have to click ok which can be collected about which you will learn later
-
+// prompt("what is the name of the day can you help me to remind I was sick so i forgot the day when I went to the hospital if you know who i am then please try to understand it. it is urgent ?  ")// in this case we will get a popup on our site like yoursite name and then says like message you have to fill in that box and then have to click ok which can be collected about which you will learn later
 
 //
 
 // the data which we will get though the above method will be in the string and if we want to convert that message into the number or into the any othe data type we have to wrap that prompt function like this
-const perfectAge = Number (prompt ( `What is you current Age ?`));
-console.log(perfectAge);
+// const perfectAge = Number (prompt ( `What is you current Age ?`));
+// console.log(perfectAge);
 
 // the logged value of the above code in the console will be the value that the user will put in the popup box which will be basically a number because we wraped the prompt function with the Number which will convert the sting Number value into the Number Value
 
+// const userData = prompt("what is your name");
+// console.log(userData);
 
+// in the above case we used a const userData to store the data of the prompt of the user and then we used the console.log function to print the data of the user in the console
 
-const userData = prompt("what is your name");
-console.log(userData);
+// always try to use strict equallity operator to compare any two number
 
-// in the above case we used a const userData to store the data of the prompt of the user and then we used the console.log function to print the data of the user in the console 
+// there is also a "else if" condition in which you have to write the else if condition after the first if condition so make sure to have multiple condition to execute at once like here is the example
 
+let heightOfRohit = 23;
 
-// always try to use strict equallity operator to compare any two number 
+if (heightOfRohit === 18) {
+  console.log(`Hey you are right `);
+} else if (heightOfRohit === 17) {
+  console.log(`Hey you are not wrong but at least you should of 17.5 kg`);
+} else if (heightOfRohit === 23) {
+  console.log(`hey you are of 23 that is great`);
+} else {
+  console.log(`you should be something like 18,17 or 23`);
+}
+
+// In the above example if any of the above if or else if condition will not be apply to anyone than at last it will log else condition to the console
+
+// we will get the "2nd else if" version of the code because we changed the weight value from 18 to 23. we can also add more else if condition.
+
 // there is also a different operator which also comes with strict different operator which is !== and also the loose different operator which is != and the loose different operator will do the type coersion and the strict different operator will not do the type coersion
 
-weight = 18;
-if(weight !== 18) {
+weight = 13;
+if (weight !== 18) {
   console.log(`You are of 18 kg`);
-}else{
+} else {
   console.log(`You are under 18`);
-}// we will get the else version of the code because the
+}
 
+// there is also a loose different operator which actually does the type coersion here is the example of that
 
-// but try to use the strict loose operator whenever you will try to use 
+weight = "24";
+if (weight != 24) {
+  console.log(`hey you are of 24`);
+} else {
+  console.log(`you are exactly of 24`);
+}
 
+// in the above example we can see that we defined the weight value in the string but under the if statement we are using the loose different operator which actually does the type coersion means it changes the string 24 into the number 24 automatically and then it logged the correct answer of the condition which is the else block
 
-// "Not", "And", and "Or" operator
+// but try to use the strict different operator whenever you will try to use
 
-// 
-// let firstNo = 6;
-// if((firstNo/2))
-// console.log(firstNo*((firstNo+1)/2));
+// Basic Boolean Logic "Not", "And", and "Or" operator
+
