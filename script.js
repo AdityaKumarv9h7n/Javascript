@@ -490,5 +490,115 @@ if (weight != 24) {
 
 // but try to use the strict different operator whenever you will try to use
 
-// Basic Boolean Logic "Not", "And", and "Or" operator
+// Basic Boolean Logic , "And","Or" and "Not"operator
 
+// below is the example of the conditional operation 
+
+// Example :-  A : Sarah has a driver's license
+// B : Sarah has good vision
+// AND operator can be understand as "Sarah has a driver's license AND good vision"
+
+// And operator :- when both the condition given above will be true than in that case the result will be true this will also the same for more than two logical conditon because at least one condition for all the logics should be true 
+
+// and in any other case the result will be false because one of the condition will be false which will make the whole result false 
+
+// OR operator works in a opposite way of the AND operator because when at least one of the condition will be true than the result will be true and if all the condition will be false in that case the answer will be false 
+
+// OR Operator :-  A : Sarah has a driver's license OR good vision
+
+// if any one will be true than the result will be true and if both will be false than the result will be false
+
+// Not operator basically inverts the condition 
+
+// if Sarah has a driver's license then it will be false and if Sarah does not have a driver's license then it will be true
+
+// and also same for the another statement if Sarah has a good vision than it will be false and if she does not has a good vision than it will be true
+
+// here is the example of the all of the above Boolean logics
+// Age = 16
+//  A: Age is greater or equal to 20 (This condition is false)
+// B: Age is less than 30(this condition is true)
+//  so the !A = True
+// A AND B = False
+// A or B = True
+// !A or B = True
+// A or !B = False
+
+// The symbol of AND operator is && 
+
+let hasDriversLicense = true; // this is the case A
+let hasGoodVision = true;// this is the case B
+console.log(hasDriversLicense && hasGoodVision);// the result will be true 
+
+hasDriversLicense = true; // this is the case A
+hasGoodVision = false;// this is the case B
+
+console.log(hasDriversLicense && hasGoodVision);// the output will be false as we know from the truth table of the AND Operator
+
+// now we are going to use the or operator 
+//as you can see that the OR operator looks like these two straight vertical lines  ||
+console.log(hasDriversLicense || hasGoodVision );// as we know from the truth table of the OR logic we will get the True as our output of this code in the console
+
+hasDriversLicense = false; // this is the case A
+hasGoodVision = false;// this is the case B
+
+console.log(hasDriversLicense || hasGoodVision);// the output of this code in the console will be false because we can see both the above condition is false so we know from the truth table of the OR logic the output in this case will be false
+
+// and the not logic is denoted as this !hasDriversLicense the exclamation sign in the beginning of the variable makes the logic Not type
+
+console.log(!hasDriversLicense);// the output will be true because the real statement is true and we know that the Not operator actually inverts the value it means that the output will be true
+
+let shouldDrive = hasDriversLicense && hasGoodVision;
+if(shouldDrive){
+  console.log(`Yes she should drive`)
+}else{
+  console.log(`She should not drive...`)
+}
+// in the above example the else block should be work because the boolean value of shouldDrive is false so it will log the else block to the console
+
+hasDriversLicense = true; // this is the case A
+hasGoodVision = true;// this is the case B
+
+shouldDrive = hasDriversLicense && hasGoodVision;
+if(shouldDrive){
+  console.log(`Yes she should drive`)
+}else{
+  console.log(`She should not drive...`)
+}
+// in the above condition the if block will be logged to the console because the boolean value is true 
+
+// we can also assign the third variable to add more condtion into these two condition
+
+let isTired = true;
+console.log(hasDriversLicense || hasGoodVision || isTired);// the output will be true 
+
+hasDriversLicense = false;
+isTired = false;
+console.log(hasDriversLicense && hasGoodVision || isTired);// the output will be false
+
+console.log(hasDriversLicense || hasGoodVision && isTired); // the output will be false 
+
+
+// now we can add one more condition with these two conditions
+shouldDrive = hasDriversLicense && hasGoodVision && !isTired ;
+if(shouldDrive){
+  console.log(`Yes she should drive`)
+}else{
+  console.log(`She should not drive...`)
+}
+// the output will be the else statement and the output will be true if when the value of the hasDriversLicense will be true hasGoodVision will be true and the isTired will be false which is false in the above condition 
+
+hasDriversLicense = true;
+hasGoodVision = true;
+isTired = false;
+shouldDrive = hasDriversLicense && hasGoodVision && !isTired ;
+
+if(shouldDrive){
+  console.log(`Yes she should drive`)
+}else{
+  console.log(`She should not drive...`)
+}
+
+// when we define the same variable again and agin with different values we also have to define the new variable in this case we also have to define the shouldDrive variable here if we not do it then in that case the result will be shown according to the uper defined shouldDrive condition
+
+// the output of the above code will be the if statement as we know from the truth table of the && and || operators
