@@ -602,3 +602,46 @@ if(shouldDrive){
 // when we define the same variable again and agin with different values we also have to define the new variable in this case we also have to define the shouldDrive variable here if we not do it then in that case the result will be shown according to the uper defined shouldDrive condition
 
 // the output of the above code will be the if statement as we know from the truth table of the && and || operators
+
+/* Coading Challenge #3
+There are two gymnastics teams, Dolphins and Koalas. They compete agaist each other 3 times. The winner with the highest average score wins the trophy! 
+
+1) calculate the average score for each team, using the test data below 
+2) Compare the team's average scores to determine the winer of the competition, and print it to the console. Don't forget that there can be a draw, so test for that as well (draw means they have the same average score).
+
+3) BONUS 1: Include a requirement for a minimum score of 100. With this rule a team only wins if it has a higher score than the other team, and the same time a score of at least 100 points. HINT: Use a logical operator to test for minimum score, as well as multiple else-if blocks
+
+4) BONUS 2: Minimum score also applies to a draw! So a draw only happens when both teams have the same score and both have a score greater or equal 100 points. Otherwise no team wins the trophy.
+
+TEST DATA : Dolphines score 96; 108 and 89; Koalas score 88, 91 and 110
+
+TEST DATA BONUS 1: Dolphins score 97, 112, and 101. Kolas score 109,95 and  123
+
+TEST DATA BONUS 2: Dolphins score 97 , 112, and 101. Kolas score 109,95 and  106
+*/
+
+let firstMatchDolphin = 96;
+let secondMatchDolphin = 108;
+let thirdMatchDolphin = 89;
+
+let fistMatchKoalas = 88;
+let secondMatchKoalas = 91;
+let thirdMatchKoalas = 110;
+
+// average of the Dolphins is 
+let averageDolphines = (96+108+89)/3;
+console.log(averageDolphines);
+
+// average of the Koalas is
+let averageKoalas = (88+91+110)/3;
+console.log(averageKoalas);
+
+if (averageDolphines > averageKoalas && averageDolphines >= 100 ){
+  console.log(`Dolphines has won the match by ${averageDolphines - averageKoalas} points`)
+}else if (averageDolphines < averageKoalas && averageKoalas >= 100 ){
+  console.log(`Koalas has won the match by ${averageKoalas - averageDolphines} points`)
+}else if (averageDolphines === averageKoalas >= 100 ){
+console.log(` Draw `)}
+else{
+  console.log(`no one won beacuase the team with the highest points may have not passed the minimum criteria of having 100 points `)
+}
