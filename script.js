@@ -645,3 +645,77 @@ console.log(` Draw `)}
 else{
   console.log(`no one won beacuase the team with the highest points may have not passed the minimum criteria of having 100 points `)
 }
+
+// The Switch Statement
+
+const day = "monday";
+switch (day) {
+  case "monday":
+      console.log("Plan your day accouring to the week");
+    break;
+    case "tuesday":
+      console.log("This is the tuesday and you have to work hard")
+    break;
+    case "wednesday":
+      console.log("Do what you want to do today");
+    break;
+    case "thursday":
+    case "friday":
+      console.log("do only necessary work");
+      break;
+    case "saturday":
+      console.log("Get ready for the sunday");
+      break;
+    case "sunday":
+      console.log("Now its time to take rest");
+      break;
+    default:
+      console.log("choose a valid day");
+      break;
+
+}
+
+// in the above code the switch statement actually will switch the output of the code as it will change according to the case and the break; atually act like a break of this type of code if we not write break after every console.log than it will also log the result of the another case below is the example of this case
+
+dayNew ="monday"
+switch(dayNew){
+  case("monday"):
+  console.log(`this is the output`);
+  // break;
+  case("tuesday"):
+  console.log( `This is the tuesday`);
+  break;
+  case("wednesday"):
+  console.log(`this is the wednesday`);
+  break;
+
+}
+
+//you can see the result of the above code as you can see that i have commented out the break; after the monday logged value which makes the JS not to stop because we have commented out the break; so due to which it logged the another value of the case of the tuesday which is the This is the tuesday so make sure to add break while using this switch statement method to avoid any kind of error other wise use the if else way as given below and also make sure to add the : sign after every case as we have written above 
+
+dayNew = "Thursday";
+if(dayNew === "monday"){
+  console.log(`hey do your own work `)
+}else if (dayNew === "thuesday"){
+  console.log(`It is tuesday you should start to do `)
+}else if (dayNew === "wednesday" ){
+  console.log(`Today is wednesday and now you have to fix something`)
+}else if(dayNew === ("thursday" || "friday")){
+  console.log(`today is the only day to give your 100%`)
+}else if (dayNew === "saturday"){
+  console.log(`today is the saturday you should prepare for the sunday`)
+}else if(dayNew === "sunday"){
+  console.log(`Now take rest`)
+}else{
+  console.log(`OPPS! select a valid day`)
+}
+
+
+/* we can also write the above 
+  else if(dayNew === ("thursday" || "friday")){
+  console.log(`today is the only day to give your 100%`)
+  line as follows
+
+  else if (dayNew === "thursday" || dayNew === "friday"){
+  console.log(`today is the only day to give your 100%`)
+  line as follows`)} */
