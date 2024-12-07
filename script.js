@@ -691,6 +691,7 @@ switch(dayNew){
 
 }
 
+
 //you can see the result of the above code as you can see that i have commented out the break; after the monday logged value which makes the JS not to stop because we have commented out the break; so due to which it logged the another value of the case of the tuesday which is the This is the tuesday so make sure to add break while using this switch statement method to avoid any kind of error other wise use the if else way as given below and also make sure to add the : sign after every case as we have written above 
 
 dayNew = "Thursday";
@@ -719,3 +720,55 @@ if(dayNew === "monday"){
   else if (dayNew === "thursday" || dayNew === "friday"){
   console.log(`today is the only day to give your 100%`)
   line as follows`)} */
+
+
+
+// Statements and Epressions
+// the line of text that gives us some (value or result) as the output  is known as Expression like 3 + 4 is an expression or 1922 or true && false && !false is also a expression because this will give us some result 
+// Expressions are like the words that output some results but the Statements are the Sentences which does not shows any result as the output 
+
+// like here is the example of the statement
+
+if(34>30){
+  const str ="34 is bigger than 30";
+}
+
+// in the above example the output of this code will be nothing so the above code is a Statement 
+// we insert the Expression in the placeholder not the Statement because the statement does not produces any result in itself
+
+const me = "this is the text which is stored in the me variable "
+console.log(`this is the placeholer ${me}`)
+// Inshort you can remember it as Expression Produces values but Statements don't
+
+// The conditional (Ternary) Operator
+// in the conditional (Ternary) Operator we actually first declar a variable and than we write if like condition in the following way without using if  keyword as given below and then we use a question mark "?" after we write the condition which actually will be execuated if the given condition will be true and then we write a colon ":" after that we define what will be happened if the first condition will not be true 
+
+
+let ageMine = 14;
+ageMine >= 18 ? console.log("Hey you can drink any thing you want"): console.log("Only one thing is available for you");
+
+// conditional operator is an operator so it has some value and therefore this is an expression not a statement (so we can use it in the place holder)
+
+// we can simply use the ternary operator to simply execute a condtion statement in a simple way than the comparision to the If else statement here is an example of how we can simplify the usages of the Ternary operator in this way
+
+ageMine = 14;
+let drink = ageMine >= 18 ? "You can drink anything" : "You can only drink water";
+console.log(drink);
+
+//in the above code let drink = ageMine >= 18 ? "You can drink anything" : "You can only drink water"; is the expression 
+
+// we can also write the above code in the form of the if else statement so here is the defined way to write the above code 
+
+let drink2;
+if (ageMine >= 18){
+  drink2 = "anything you want to drink"
+}else {
+  drink2 = "you can only drink water";
+}
+console.log(drink2);
+
+console.log(`${ageMine >= 18 ? "You can drink anything" : "You can only drink water"}`)
+
+// Inside of a tempelate literal you can use the conditional becase the ternary operator has a value as we used in the above code  
+
+// in the above example in the placeholder we used the expression ageMine >= 18 ? "You can drink anything" : "You can only drink water" because the expression has a value which can be  "You can drink anything" or "You can only drink water"  for different condition
