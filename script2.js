@@ -32,3 +32,21 @@ console.log(nameOf + lastName);
 
 // similarly we can not assign the variable name as private
 
+// Function
+// Function is a piece of code which we can use again and again in our entire project
+// Function contains one or more complete line of codes 
+// Variable holds a value 
+
+function name (){
+    console.log("My name is ADXWD")
+};
+
+name();
+name();
+
+
+// in the above example we assigned the function with the name of 'name' and after that we put the small brackets and then we put the curly brackets which is the body of the function in the body part of the function we can put any code that we want to get when we call the function by its name in anywhere in the whole code space of this project 
+
+// we call the function just by using name of the function and the small brackets of the function and then at the end of that we use the semicolon as we use  
+
+// invoking the function or running the function or calling the function all are the same term 
