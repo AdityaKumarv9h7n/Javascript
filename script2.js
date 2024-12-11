@@ -45,8 +45,50 @@ name();
 name();
 
 
-// in the above example we assigned the function with the name of 'name' and after that we put the small brackets and then we put the curly brackets which is the body of the function in the body part of the function we can put any code that we want to get when we call the function by its name in anywhere in the whole code space of this project 
+// in the above example we assigned the function with the name of 'name' and after that we put the parentheses (small brackets) and then we put the curly brackets which is the body of the function in the body part of the function we can put any code that we want to get when we call the function by its name in anywhere in the whole code space of this project 
 
-// we call the function just by using name of the function and the small brackets of the function and then at the end of that we use the semicolon as we use  
+// we call the function just by using name of the function and then puting the parentheses after the name and at the end as we use the semicolon that will call the function 
 
 // invoking the function or running the function or calling the function all are the same term 
+// function can not only run the code but also can receive and return the data back 
+
+// function can take the input and can return the output
+//Parameteres are like variable which are only specific to this function they will get defined when we call the function
+
+//Parameters represent the input data when we call the function
+
+// Here the parameters are the apples and the oranges and the value of these parameters when we call the function is 5 and 3 for apples and the oranges respectively 
+
+
+function fruitProcesor (apples, oranges) {
+    console.log(apples, oranges);
+    const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+    return juice;
+}
+fruitProcesor(5, 3);
+// in the above example the console.log(apples, oranges); defined because we called the function with the parameters of 5 and 3 so the console.log(apples, oranges); will print
+
+// in the above example as you saw that we called the function once so now the function contains the value of the const juice because we lastly returned the const juice in the above line of the code with the function 
+
+// now we have to contain the value of the output of the function in the another variable 
+
+let resultJuice = fruitProcesor(5, 3);
+console.log(resultJuice);
+
+// what happened in the above codes
+// first we put the value of the parameters 
+// then in the above function it fills the values 
+// and then it logged to the console ( we actually did this because we want to see the result of the fruitProcessor function when we only put the paramerets in the fruitProcessor functions )
+// and then it was captured in the juice variable
+// and then it got return
+// and then it was captured in the resultJuice variable
+// and then it was logged to the console as console.log(resultJuice) ( we did this to see the result into the console )
+
+// we can actually directly logged the value of the function to the console
+
+console.log(fruitProcesor(5, 3));
+
+//if we use the above way to execute the value into the console it will aslo give the value of the function fruitProcessor 
+
+// everytime we will call the function we will get the output into the console as the result we will get here three times the result 5,3 because the first time when it will log the value of the function into the console when we write the parameter value and then the another time will we then when this value will be execuated and then
+
