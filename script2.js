@@ -60,20 +60,22 @@ name();
 // Here the parameters are the apples and the oranges and the value of these parameters when we call the function is 5 and 3 for apples and the oranges respectively 
 
 
-function fruitProcesor (apples, oranges) {
-    console.log(apples, oranges);
-    const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
-    return juice;
-}
-fruitProcesor(5, 3);
+// function fruitProcesor (apples, oranges) {
+//     console.log(apples, oranges);
+//     const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+//     return juice;
+// }
+// fruitProcesor(5, 3);
+
+
 // in the above example the console.log(apples, oranges); defined because we called the function with the parameters of 5 and 3 so the console.log(apples, oranges); will print
 
 // in the above example as you saw that we called the function once so now the function contains the value of the const juice because we lastly returned the const juice in the above line of the code with the function 
 
 // now we have to contain the value of the output of the function in the another variable 
 
-let resultJuice = fruitProcesor(5, 3);
-console.log(resultJuice);
+// let resultJuice = fruitProcesor(5, 3);
+// console.log(resultJuice);
 
 // what happened in the above codes
 // first we put the value of the parameters 
@@ -86,9 +88,23 @@ console.log(resultJuice);
 
 // we can actually directly logged the value of the function to the console
 
-console.log(fruitProcesor(5, 3));
+// console.log(fruitProcesor(5, 3));
 
 //if we use the above way to execute the value into the console it will aslo give the value of the function fruitProcessor 
 
 // everytime we will call the function we will get the output into the console as the result we will get here three times the result 5,3 because the first time when it will log the value of the function into the console when we write the parameter value and then the another time will we then when this value will be execuated and then
 
+function fruitProcessor(apples, oranges){
+    // console.log(apples, oranges);
+    const juice = `Juice with ${apples} apples and ${oranges} oranges.`
+    return juice;
+}
+// const appleJuice = fruitProcessor(5, 4);
+// console.log(appleJuice);
+// console.log(fruitProcessor(5, 4));
+
+// const appleOrangeJuice = fruitProcessor(7, 5);
+// console.log(appleOrangeJuice);
+
+const ju = fruitProcessor(9, 8);
+console.log(ju);
