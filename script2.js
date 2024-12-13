@@ -108,3 +108,5 @@ function fruitProcessor(apples, oranges){
 
 const ju = fruitProcessor(9, 8);
 console.log(ju);
+
+//we can return the value of the function through the above given way
