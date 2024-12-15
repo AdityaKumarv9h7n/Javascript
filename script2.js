@@ -110,3 +110,5 @@ const ju = fruitProcessor(9, 8);
 console.log(ju);
 
 //we can return the value of the function through the above given way
+
+// make sure to keep in mind the ternary operator 
