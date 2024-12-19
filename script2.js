@@ -109,6 +109,43 @@ function fruitProcessor(apples, oranges){
 const ju = fruitProcessor(9, 8);
 console.log(ju);
 
-//we can return the value of the function through the above given way
+// Parameter is a kind of place holder in the function and the argument is the actual value to fill in the place holder
 
-// make sure to keep in mind the ternary operator 
+// now we are going to use the function in the JS in a simple way which we will be used in the real world scenario
+
+function calAge1(birthYear){
+    const age = 2024 - birthYear;
+    return age;
+}
+
+// the above given way is also the same but what we do here is that we will do here to make it simpler and more generic is we will not go to declair any type of the const again to actually return its value so we will do this way
+
+function calAge1(birthYear){
+    return 2024 - birthYear;
+}
+
+const age1 = calAge1(1990);
+console.log(calAge1(1990));
+// or 
+console.log(age1);
+
+//the above we learned is the function declaration and the below we are going to learn from now is the Function Expression (make sure to keep in mind that the function give us some value so we can stor e the value in any other place)
+
+// In JS functions are just like values 
+// function can be a number,string or a boolean vaule
+
+const calcAge2 = function(birthYear){
+    return 2024 - birthYear;
+
+}
+// in the above line of the code calcAge2 holds the value and the function means both because as we know that the functions are just the values
+
+const age2 = calcAge2(1990)
+
+console.log(age2);
+// or
+console.log(calcAge2(1990));
+
+// the above function expression is also called function without name or anonymous function
+
+//the one major difference between the function decleration and the function expression is that in the function decleration we can call the function first and then define it later in the upcoming line of code but in the function expression we can not call the function before the declaration of the function 
