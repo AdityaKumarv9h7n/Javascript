@@ -310,7 +310,7 @@ console.log(String(19), 19); // this will log the first number to the console as
 
 console.log("I am " + 25 + " years old "); // this will log to the console I am 25 years old because the + operator is used here which will convert the number 25 into the string type and then concatenate
 
-console.log(" I am " - 25 + " years old "); // this will log to the console "NaN years old" because as we from the Operators precedence that substraction works from the left-to-right so in this case first JS will convert the "I am" string into the number which will be NaN and then from the NaN 25 will be substracted which will also give us NaN as the result and at last the javascript will concatenate the NaN with the string " years old " which will give us "NaN years old" as the result
+console.log(" I am " - 25 + " years old "); // this will log to the console "NaN years old" because as we know from the Operators precedence that substraction works from the left-to-right so in this case first JS will convert the "I am" string into the number which will be NaN and then from the NaN 25 will be substracted which will also give us NaN as the result and at last the javascript will concatenate the NaN with the string " years old " which will give us "NaN years old" as the result
 
 console.log(" I am " - 25 + " years old "); // in this example first the javascript will try to do the substraction operation which will fail because we can't subtract a number from a string so it will give us NaN as the result and then the javascript will concatenate the NaN with the string " years old " which will give us "NaN years old" as the result
 
