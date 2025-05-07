@@ -296,7 +296,7 @@ console.log(String(NaN)); // this will log NaN to the console because NaN is a n
 
 // we get NaN when we try to convert a string into a number if the string is not a valid number type
 
-// when operation Numner() fails to give us a new number type it will return NaN which stands for Not a Number
+// when operation Number() fails to give us a new number type it will return NaN which stands for Not a Number
 
 // now we are going to converting the number into the string by using the String() function
 
